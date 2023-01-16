@@ -14,89 +14,30 @@
 @import "base/mixins";
 
 html {
-  font-family: laca, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: $background;
-  font-size: 10px;
 }
 
 .main {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 10rem;
   flex-flow: column;
-  width: 100vw;
-  height: 100vh;
 }
 
-.book:before {
-  content: "";
-  width: 30px;
-  height: 100%;
-  background: #0e0e0e;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: skewY(-45deg) translate(-57px, -43px);
-}
-
-.book:after {
-  content: "";
-  width: 106%;
-  height: 30px;
-  background: #ccc;
-  position: absolute;
+div.chat {
+  position: fixed;
   bottom: 0;
-  left: 0;
-  transform: skewX(-45deg) translate(-11px, 30px);
-}
-
-.book {
-  background: linear-gradient(#4886d9, #448ff2, #796ad9, #c955d9);
-  margin: auto;
-  border-radius: 5px;
-  height: 600px;
-  width: 50vw;
-  text-align: center;
-  color: $white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  font-size: 2rem;
-  border-left: 30px solid #131313;
-  transform: rotate(-10deg) skewX(5deg) scale(0.8);
-  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
-}
-
-.box {
-  display: flex;
-  justify-content: center;
-}
-
-.book-title {
-  font-weight: 600;
-  font-size:3em;
-}
-
-.description {
-  font-weight: 100;
-  font-size:2em;
-}
-
-.copyright {
-  font-size:0.7em;
+  right: 0;
 }
 
 
-
-/* You are given a book cover and you have to set the correct font sizing to make it look pretty. The default font size of the root element is 16 pixels.
-When implemented, merge the dev branch into master before validating
+/* Create a chat widget which is always on the bottom right corner
+When implemented merge the dev branch into master before validating
 Requirements
-Implement your changes in the app.scss file which is located in the src/scss folder
-Set the font-size CSS property on the element with class book to be twice the size of the root element
-Set the width CSS property on the element with class box to equal exactly 50% of the viewport (use the vw unit)
-Set the font-size CSS property on the element with class copyright to be exactly 70% of the parent's font-size (use the em unit)
-Set the font-size CSS property on the element with class book-title to be exactly 3 times bigger than the parent's font-size (use the em unit)
-Set the font-size CSS property on the element with class description to be exact 2 times bigger than the parent's font-size (use the em unit)
-Gotchas
-When you have to deal with sizes relative to the root element use rem unit */
+The project must run when started via npm run start
+There must be a "div" element on the page with the class of .chat
+The chat must be on the bottom right corner no matter how much the user scrolls down */
