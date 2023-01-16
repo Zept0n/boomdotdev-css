@@ -28,14 +28,13 @@ html {
   flex-flow: column;
 }
 
+
 @media screen and (min-width: 600px){
-  .discounts {
+  .navbar-burger {
     display: none;
   }
-}
-
-@media screen and (max-width: 600px){
-  .discounts {
+  .navbar-menu {
     display: block;
   }
 }
+
