@@ -28,16 +28,7 @@ html {
   flex-flow: column;
 }
 
-div.chat {
+div.navbar {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  top: 0;
 }
-
-
-/* Create a chat widget which is always on the bottom right corner
-When implemented merge the dev branch into master before validating
-Requirements
-The project must run when started via npm run start
-There must be a "div" element on the page with the class of .chat
-The chat must be on the bottom right corner no matter how much the user scrolls down */
